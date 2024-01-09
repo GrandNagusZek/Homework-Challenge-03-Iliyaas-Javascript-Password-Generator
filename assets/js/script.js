@@ -18,16 +18,29 @@ if(passwordSize>=8 && passwordSize<=128){
    var confirmNumeric=confirm("Do you want numeric characters included in the password?")
    var confirmSpecialCharacters=confirm("Do you want special characters included in the password?")
 
+   for(var i=0; i < passwordSize; i++){
 
-if(confirmLowerCase){
+   
+
+if(confirmLowerCase && savedPassword.length < passwordSize){
   var randomIndex= Math.floor(Math.random() * lowercase.length) 
-}
+
 console.log(randomIndex);
 
 savedPassword= savedPassword+lowercase[randomIndex]
 
+}
+
+if(confirmUpperCase && savedPassword.length < passwordSize){
+  var randomIndex= Math.floor(Math.random() * uppercase.length) 
+
+  console.log(randomIndex);
+  
+  savedPassword= savedPassword+uppercase[randomIndex]
 
 }
+
+
 else{
   alert("Invalid Entry. Password length must be between 8 and 128 characters")
 }
