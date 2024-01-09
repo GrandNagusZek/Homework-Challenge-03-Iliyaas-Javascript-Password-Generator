@@ -2,7 +2,15 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-var passwordSize=prompt("Enter password length between 8 and 128")
+var passwordSize=prompt("Enter password length between 8 and 128 characters")
+console.log(passwordSize)
+
+if(passwordSize>=8 && passwordSize<=128){
+
+}
+else{
+  alert("Invalid Entry, Password length must be between 8 and 128 characters")
+}
 
 }
 
