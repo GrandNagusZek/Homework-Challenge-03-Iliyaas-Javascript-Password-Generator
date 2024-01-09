@@ -17,11 +17,21 @@ if(passwordSize>=8 && passwordSize<=128){
    var confirmUpperCase=confirm("Include Uppercase characters in the password?")
    var confirmNumeric=confirm("Do you want numeric characters included in the password?")
    var confirmSpecialCharacters=confirm("Do you want special characters included in the password?")
+
+
+if(confirmLowerCase){
+  var randomIndex= Math.random() * lowercase.length 
+}
+
+
+
 }
 else{
   alert("Invalid Entry. Password length must be between 8 and 128 characters")
 }
 
+
+return savedPassword
 
 }
 
