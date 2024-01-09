@@ -6,11 +6,11 @@ var passwordSize=prompt("Enter password length between 8 and 128 characters")
 console.log(passwordSize)
 
 if(passwordSize>=8 && passwordSize<=128){
-   var confirmLowerCase=confirm("Include lowercase in the password?")
+   var confirmLowerCase=confirm("Include lowercase characters in the password?")
    console.log(confirmLowerCase);
-   var confirmUpperCase=confirm("Include Uppercase in the password?")
-   var confirmNumeric=confirm("Do you want numeric included in the password?")
-
+   var confirmUpperCase=confirm("Include Uppercase characters in the password?")
+   var confirmNumeric=confirm("Do you want numeric characters included in the password?")
+   var confirmSpecial=confirm("Do you want special characters included in the password?")
 }
 else{
   alert("Invalid Entry. Password length must be between 8 and 128 characters")
