@@ -7,6 +7,7 @@ var numeric="0123456789";
 var specialCharacters="!@#$%^&*_-~=+";
 
 function generatePassword(){
+  var savedPassword="";
 var passwordSize=prompt("Enter password length between 8 and 128 characters")
 console.log(passwordSize)
 
