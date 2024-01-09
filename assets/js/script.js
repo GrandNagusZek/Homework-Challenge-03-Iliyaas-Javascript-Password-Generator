@@ -3,6 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 var lowercase="abcdefghijklmnopqrstuvwxyz";
 var uppercase=lowercase.toUpperCase();
+var numeric="0123456789";
+var specialCharacters="!@#$%^&*_-~=+";
 
 function generatePassword(){
 var passwordSize=prompt("Enter password length between 8 and 128 characters")
