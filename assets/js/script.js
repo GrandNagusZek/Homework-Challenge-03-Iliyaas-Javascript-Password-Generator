@@ -22,7 +22,9 @@ if(passwordSize>=8 && passwordSize<=128){
 if(confirmLowerCase){
   var randomIndex= Math.floor(Math.random() * lowercase.length) 
 }
+console.log(randomIndex);
 
+savedPassword= savedPassword+lowercase[randomIndex]
 
 
 }
