@@ -8,6 +8,9 @@ console.log(passwordSize)
 if(passwordSize>=8 && passwordSize<=128){
    var confirmLowerCase=confirm("Include lowercase in the password?")
    console.log(confirmLowerCase);
+   var confirmUpperCase=confirm("Include Uppercase in the password?")
+
+
 }
 else{
   alert("Invalid Entry. Password length must be between 8 and 128 characters")
