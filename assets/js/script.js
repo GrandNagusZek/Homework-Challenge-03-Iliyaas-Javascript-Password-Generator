@@ -39,16 +39,16 @@ if(confirmUpperCase && savedPassword.length < passwordSize) {
   savedPassword= savedPassword+uppercase[randomIndex]
 }
 
-if(confirmNumeric && savedPassword.length < passwordSize){
+if(confirmNumeric && savedPassword.length < passwordSize) {
   var randomIndex= Math.floor(Math.random() * numeric.length)
 }
 
-if(confirmspecialCharacters && savedPassword.length < passwordSize){
+if(confirmSpecialCharacters && savedPassword.length < passwordSize){
   var randomIndex= Math.floor(Math.random() * specialCharacters.length)
 }
 
-else{
-  alert("Invalid Entry. Password length must be between 8 and 128 characters")
+if(savedPassword.length < passwordSize) {
+  alert("Invalid Entry. Password length must be between 8 and 128 characters");
 }
 
 
