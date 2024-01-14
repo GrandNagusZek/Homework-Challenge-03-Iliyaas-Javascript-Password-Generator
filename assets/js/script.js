@@ -6,10 +6,14 @@ var uppercase=lowercase.toUpperCase();
 var numeric="0123456789";
 var specialCharacters="!@#$%^&*_-~=+";
 
-function generatePassword(){
-  var savedPassword="";
-var passwordSize=prompt("Enter password length between 8 and 128 characters")
-console.log(passwordSize)
+
+function generatePassword() {
+  var passwordSize=prompt("Enter password length, between 8 and 128 characters");
+  console.log(passwordSize)
+  var savedPassword=("");
+
+
+
 
 if(passwordSize>=8 && passwordSize<=128){
    var confirmLowerCase=confirm("Include lowercase characters in the password?")
@@ -17,17 +21,16 @@ if(passwordSize>=8 && passwordSize<=128){
    var confirmUpperCase=confirm("Include Uppercase characters in the password?")
    var confirmNumeric=confirm("Do you want numeric characters included in the password?")
    var confirmSpecialCharacters=confirm("Do you want special characters included in the password?")
+}
 
-   for (var i=0; i < passwordSize; i++){
+   for (var i=0; i < passwordSize; i++) {}
 
-   
-
-if (confirmLowerCase && savedPassword.length < passwordSize) {
+    if (confirmLowerCase && savedPassword.length < passwordSize) {
   var randomIndex= Math.floor(Math.random() * lowercase.length) 
 
 console.log(randomIndex);
 
-savedPassword= savedPassword + lowercase[randomIndex]
+savedPassword = savedPassword + lowercase[randomIndex]
 
 }
 
@@ -49,12 +52,13 @@ if(confirmSpecialCharacters && savedPassword.length < passwordSize){
 
 if(savedPassword.length < passwordSize) {
   alert("Invalid Entry. Password length must be between 8 and 128 characters");
-}
 
 
 return savedPassword
 
 }
+}
+
 
 // Write password to the #password input
 function writePassword() {
@@ -66,4 +70,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);}
+generateBtn.addEventListener("click", writePassword);
