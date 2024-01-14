@@ -33,13 +33,33 @@ function generatePassword() {
       }
 
       if (confirmUpperCase && savedPassword.length < passwordSize) {
-        var randomIndex = Math.floor(Math.random() * uppercase.length)  // Math.random() * 26 => extends the range from 0 to 1 => 0 to 26, this includes decimals. Math.floor round it down, ex. 2.8 => 2
+        var randomIndex = Math.floor(Math.random() * uppercase.length)
         console.log(randomIndex);
 
 
         savedPassword = savedPassword + uppercase[randomIndex]
 
       }
+
+      if (confirmNumeric && savedPassword.length < passwordSize) {
+        var randomIndex = Math.floor(Math.random() * numeric.length)
+        console.log(randomIndex);
+
+
+        savedPassword = savedPassword + numeric[randomIndex]
+
+      }
+
+      if (confirmSpecialCharacters && savedPassword.length < passwordSize) {
+        var randomIndex = Math.floor(Math.random() * specialCharacters.length)
+        console.log(randomIndex);
+
+
+        savedPassword = savedPassword + specialCharacters[randomIndex]
+
+      }
+
+
 
     }
 
