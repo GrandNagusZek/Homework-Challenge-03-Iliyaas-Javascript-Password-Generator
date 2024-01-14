@@ -6,3 +6,23 @@ This is a JavaScript Password Generator application. It is designed to create se
 The generator ensures that the generated passwords meet specific security criteria, providing a reliable tool for users who want a strong password.
 
 ## Getting Started 
+Link to the live application:
+
+https://grandnaguszek.github.io/Homework-Challenge-03-Iliyaas-Javascript-Password-Generator/
+
+screenshot of live application:
+![Screenshot of live application password generator](./assets/JavaScript%20Password%20Generator%20application%20live%20site%20screenshot.png)
+
+## Installation
+N/A
+
+## Usage
+
+## Contributing
+
+## License 
+
+
+
+
+
