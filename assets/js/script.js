@@ -1,11 +1,14 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// these variables provide values for the generatePassword function to know which characters are accepted to create a password from
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = lowercase.toUpperCase();
 var numeric = "0123456789";
 var specialCharacters = "!@#$%^&*_-~=+";
 
+
+// the generatePassword function creates prompts for the user to input which types of characters they would like to include in the password as well as password length
 function generatePassword() {
   var savedPassword = "";
   var passwordSize = prompt("Enter password length, between 8 and 128 characters")
@@ -22,7 +25,7 @@ function generatePassword() {
 
 
 
-
+      // the following if statements allow the generatePassword to select random characters from each desired character type while also adhering to the users desired password character length
       if (confirmLowerCase && savedPassword.length < passwordSize) {
         var randomIndex = Math.floor(Math.random() * lowercase.length)  // Math.random() * 26 => extends the range from 0 to 1 => 0 to 26, this includes decimals. Math.floor round it down, ex. 2.8 => 2
         console.log(randomIndex);
@@ -58,26 +61,17 @@ function generatePassword() {
         savedPassword = savedPassword + specialCharacters[randomIndex]
 
       }
-
-
-
     }
 
   }
+  // this else statement provides an alert to the user when they input a password length outside of the acceptable password length.
   else {
     alert("Invalid entry, Password length must be between 8 and 128 characters");
   }
 
-
-
-
-
-
   return savedPassword
 
-
 }
-
 
 
 // Write password to the #password input
